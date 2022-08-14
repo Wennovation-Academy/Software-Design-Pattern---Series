@@ -1,1 +1,1 @@
-# Software-Design-Pattern---Series
+# Software-Design-Pattern-Series
