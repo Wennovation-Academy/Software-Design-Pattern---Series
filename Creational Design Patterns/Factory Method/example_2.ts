@@ -59,7 +59,6 @@ export class NotificationCreator {
 
 export class NotificationService {
     
-    private configuredOS = "windows";
     public notificationCreator: NotificationCreator;
     
     constructor(notificationFactory: NotificationCreator){
@@ -85,13 +84,3 @@ export class NotificationService {
         });
     }
 }
-
-class MainApplication {
-    private notificationCreator : NotificationCreator;
-    private notificationSvc: NotificationService;
-    constructor(){
-        
-        this.notificationSvc = new NotificationService(this.notificationCreator);
-    }
-}
-
